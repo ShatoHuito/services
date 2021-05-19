@@ -13,10 +13,11 @@ COPY ./srcs/nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./srcs/init.sh ./
 
 RUN wget https://wordpress.org/latest.tar.gz
-RUN tar -xvf latest.tar.gz && rm -rf latest.tar.gz
+RUN tar -xvf latest.tar.gz
+RUN rm -rf latest.tar.gz
 
 RUN  chmod 777 init.sh
 
 EXPOSE	5050
 
-CMD ["./init.sh"]
+CMD sh ./init.sh

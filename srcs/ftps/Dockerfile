@@ -16,6 +16,6 @@ COPY ./srcs/init.sh ./init.sh
 
 RUN chmod 777 init.sh
 EXPOSE 21
-EXPOSE 21111
+EXPOSE 21 111
 
 CMD sh ./init.sh

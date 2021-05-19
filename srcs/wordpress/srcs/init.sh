@@ -1,7 +1,7 @@
 #!/bin/sh
 
-php-fpm7
 nginx
+php-fpm7
 
 while true
 do
